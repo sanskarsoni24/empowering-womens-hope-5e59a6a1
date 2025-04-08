@@ -4,6 +4,10 @@ import BilingualText from "./BilingualText";
 import { Mail, Phone } from "lucide-react";
 
 const Hero = () => {
+  const handleGetSupport = () => {
+    window.location.href = "tel:7627093032";
+  };
+
   return (
     <div className="gradient-bg py-16 md:py-24">
       <div className="container mx-auto px-4">
@@ -24,13 +28,13 @@ const Hero = () => {
             Providing support, resources, and community for breast cancer patients and survivors across India.
           </p>
           
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-pink-dark hover:bg-pink text-white px-8 py-6 text-lg">
-              Get Support
-            </Button>
-            <Button variant="outline" className="border-purple hover:bg-purple-light text-purple-dark px-8 py-6 text-lg flex items-center gap-2">
+          <div className="flex justify-center">
+            <Button 
+              className="bg-pink-dark hover:bg-pink text-white px-8 py-6 text-lg flex items-center gap-2"
+              onClick={handleGetSupport}
+            >
               <Phone size={20} className="shrink-0" />
-              <span>Contact Us</span>
+              <span>Get Support</span>
             </Button>
           </div>
           
