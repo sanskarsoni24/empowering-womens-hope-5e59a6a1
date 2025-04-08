@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
 
@@ -10,6 +10,10 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleGetSupport = () => {
+    window.location.href = "tel:7627093032";
   };
 
   return (
@@ -29,9 +33,13 @@ const Navbar = () => {
             <Link to="/programs" className="font-medium text-gray-700 hover:text-pink-dark transition-colors">
               Programs
             </Link>
-            <Button variant="default" className="bg-pink-dark hover:bg-pink text-white flex items-center gap-2">
+            <Button 
+              variant="default" 
+              className="bg-pink-dark hover:bg-pink text-white flex items-center gap-2"
+              onClick={handleGetSupport}
+            >
               <Phone size={16} />
-              <span>Contact Us</span>
+              <span>Get Support</span>
             </Button>
           </div>
 
@@ -68,9 +76,13 @@ const Navbar = () => {
               >
                 Programs
               </Link>
-              <Button variant="default" className="bg-pink-dark hover:bg-pink text-white w-full flex items-center justify-center gap-2">
+              <Button 
+                variant="default" 
+                className="bg-pink-dark hover:bg-pink text-white w-full flex items-center justify-center gap-2"
+                onClick={handleGetSupport}
+              >
                 <Phone size={16} />
-                <span>Contact Us</span>
+                <span>Get Support</span>
               </Button>
             </div>
           </div>
