@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				pink: {
+					light: '#FFDEE2',
+					DEFAULT: '#FF6B8B',
+					dark: '#E5456D'
+				},
+				purple: {
+					light: '#E5DEFF',
+					DEFAULT: '#9B87F5',
+					dark: '#7E69AB'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +95,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fadeIn 0.5s ease-in-out'
+			},
+			fontFamily: {
+				'sans': ['Poppins', 'system-ui', 'sans-serif'],
+				'hindi': ['Hind', 'sans-serif']
 			}
 		}
 	},
