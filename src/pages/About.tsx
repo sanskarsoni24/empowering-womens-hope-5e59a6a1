@@ -52,14 +52,16 @@ const About = () => {
                 name="Sanskar Soni"
                 nameHindi="संस्कार सोनी"
                 role="Co-Founder"
-                linkedIn="https://linkedin.com/"
+                linkedIn="https://www.linkedin.com/in/sanskar-soni-9b75671bb/"
+                imageSrc="/public/lovable-uploads/a9f0e13c-53c0-4e45-b84e-3e8d04c36ee1.png"
               />
               
               <TeamMember
                 name="Ananya Misra"
                 nameHindi="अनन्या मिश्रा"
                 role="Co-Founder"
-                linkedIn="https://linkedin.com/"
+                linkedIn="https://www.linkedin.com/in/msananyamisra/"
+                imageSrc="/public/lovable-uploads/cf6b32c2-082f-4724-a100-e711a2dde372.png"
               />
             </div>
           </div>

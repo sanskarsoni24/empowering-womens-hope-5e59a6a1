@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import BilingualText from "./BilingualText";
+import { Mail, Phone } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -27,9 +28,21 @@ const Hero = () => {
             <Button className="bg-pink-dark hover:bg-pink text-white px-8 py-6 text-lg">
               Get Support
             </Button>
-            <Button variant="outline" className="border-purple hover:bg-purple-light text-purple-dark px-8 py-6 text-lg">
-              Donate Now
+            <Button variant="outline" className="border-purple hover:bg-purple-light text-purple-dark px-8 py-6 text-lg flex items-center gap-2">
+              <Phone size={20} className="shrink-0" />
+              <span>Contact Us</span>
             </Button>
+          </div>
+          
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex items-center text-purple-dark">
+              <Phone size={20} className="mr-2" />
+              <span className="font-medium">7627093032</span>
+            </div>
+            <div className="flex items-center text-purple-dark">
+              <Mail size={20} className="mr-2" />
+              <span className="font-medium">sanskarsoni.iitd@gmail.com</span>
+            </div>
           </div>
         </div>
       </div>

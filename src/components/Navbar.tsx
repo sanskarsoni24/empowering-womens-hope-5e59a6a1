@@ -1,8 +1,9 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,9 +16,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center">
-            <div className="text-pink-dark font-bold text-xl">Cancer Care for Her</div>
-          </Link>
+          <Logo />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
@@ -30,8 +29,9 @@ const Navbar = () => {
             <Link to="/programs" className="font-medium text-gray-700 hover:text-pink-dark transition-colors">
               Programs
             </Link>
-            <Button variant="default" className="bg-pink-dark hover:bg-pink text-white">
-              Donate Now
+            <Button variant="default" className="bg-pink-dark hover:bg-pink text-white flex items-center gap-2">
+              <Phone size={16} />
+              <span>Contact Us</span>
             </Button>
           </div>
 
@@ -68,8 +68,9 @@ const Navbar = () => {
               >
                 Programs
               </Link>
-              <Button variant="default" className="bg-pink-dark hover:bg-pink text-white w-full">
-                Donate Now
+              <Button variant="default" className="bg-pink-dark hover:bg-pink text-white w-full flex items-center justify-center gap-2">
+                <Phone size={16} />
+                <span>Contact Us</span>
               </Button>
             </div>
           </div>

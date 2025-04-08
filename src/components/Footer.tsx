@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
-import { Heart } from "lucide-react";
+import { Heart, Phone, Mail } from "lucide-react";
+import Logo from "./Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,8 +11,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-gray-800">Cancer Care for Her</h3>
-            <p className="text-gray-600 mb-4">
+            <Logo />
+            <p className="text-gray-600 mb-4 mt-4">
               Supporting women with breast cancer through awareness, resources, and emotional support.
             </p>
             <p className="text-gray-600 hindi-text">
@@ -42,12 +43,14 @@ const Footer = () => {
           
           <div>
             <h3 className="text-xl font-bold mb-4 text-gray-800">Contact Us</h3>
-            <p className="text-gray-600 mb-2">
-              Email: info@cancercareforher.org
-            </p>
-            <p className="text-gray-600">
-              Phone: +91 123 456 7890
-            </p>
+            <div className="flex items-center text-gray-600 mb-2">
+              <Phone size={16} className="mr-2" />
+              <span>7627093032</span>
+            </div>
+            <div className="flex items-center text-gray-600 mb-4">
+              <Mail size={16} className="mr-2" />
+              <span>sanskarsoni.iitd@gmail.com</span>
+            </div>
             
             <div className="mt-4 flex space-x-4">
               <a href="#" className="text-pink-dark hover:text-pink transition-colors">
