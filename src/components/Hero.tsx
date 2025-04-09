@@ -67,15 +67,12 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="w-full max-w-md animate-float">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-light/80 to-purple-light/80 rounded-lg transform rotate-3"></div>
-              <img 
-                src="/lovable-uploads/a2ae3918-4b68-439d-b7a9-bdf570872f5c.png" 
-                alt="Supporting Women" 
-                className="w-full h-auto rounded-lg shadow-lg relative z-10 transform -rotate-3"
-              />
-            </div>
+          <div className="w-full md:max-w-[45%] animate-float">
+            <img 
+              src="/lovable-uploads/a9f0e13c-53c0-4e45-b84e-3e8d04c36ee1.png" 
+              alt="Supporting Women" 
+              className="w-full h-auto rounded-lg shadow-lg relative z-10 object-cover"
+            />
           </div>
         </div>
       </div>

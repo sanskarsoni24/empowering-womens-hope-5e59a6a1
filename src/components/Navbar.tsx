@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
+import LanguageToggle from "./LanguageToggle";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
           <Logo />
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-4">
             <Link to="/" className="font-medium text-gray-700 hover:text-pink-dark transition-colors">
               Home
             </Link>
@@ -33,6 +34,7 @@ const Navbar = () => {
             <Link to="/programs" className="font-medium text-gray-700 hover:text-pink-dark transition-colors">
               Programs
             </Link>
+            <LanguageToggle />
             <Button 
               variant="default" 
               className="bg-pink-dark hover:bg-pink text-white flex items-center gap-2"
@@ -43,8 +45,9 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          {/* Mobile Menu Button and Language Toggle */}
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageToggle />
             <button onClick={toggleMenu} className="text-gray-700">
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
