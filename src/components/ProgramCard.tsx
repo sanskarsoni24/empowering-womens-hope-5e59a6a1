@@ -1,6 +1,7 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import BilingualText from "./BilingualText";
+import { motion } from "framer-motion";
 
 interface ProgramCardProps {
   title: string;
@@ -22,9 +23,9 @@ const ProgramCard = ({
   icon
 }: ProgramCardProps) => {
   return (
-    <Card className="card-hover border-t-4 border-t-pink h-full">
+    <Card className="border-t-4 border-t-pink h-full overflow-hidden group hover-lift hover-glow transition-all duration-300">
       <CardHeader className="pb-2">
-        <div className="flex justify-center mb-4 text-pink-dark">
+        <div className="flex justify-center mb-4 text-pink-dark group-hover:scale-110 transition-transform duration-300">
           {icon}
         </div>
         
@@ -46,12 +47,15 @@ const ProgramCard = ({
       </CardHeader>
       
       <CardContent>
-        <BilingualText
-          english={description}
-          hindi={descriptionHindi}
-          englishClassName="text-gray-700 text-center mb-2"
-          hindiClassName="text-gray-700 text-center text-sm"
-        />
+        <div className="relative overflow-hidden">
+          <div className="transition-transform duration-500 transform group-hover:-translate-y-full">
+            <p className="text-gray-700 text-center mb-2">{description}</p>
+          </div>
+          
+          <div className="absolute top-0 left-0 w-full transition-transform duration-500 transform translate-y-full group-hover:translate-y-0">
+            <p className="text-gray-700 text-center hindi-text text-sm">{descriptionHindi}</p>
+          </div>
+        </div>
       </CardContent>
     </Card>
   );
