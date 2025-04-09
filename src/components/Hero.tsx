@@ -69,7 +69,7 @@ const Hero = () => {
           
           <div className="w-full md:max-w-[45%] animate-float">
             <img 
-              src="/lovable-uploads/a9f0e13c-53c0-4e45-b84e-3e8d04c36ee1.png" 
+              src="/lovable-uploads/dbb59951-01e9-428f-a801-3b0ba354babf.png" 
               alt="Supporting Women" 
               className="w-full h-auto rounded-lg shadow-lg relative z-10 object-cover"
             />
