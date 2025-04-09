@@ -3,6 +3,7 @@ import React from "react";
 import { CalendarCheck, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BilingualText from "./BilingualText";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   const handleGetSupport = () => {
@@ -39,14 +40,16 @@ const CTASection = () => {
               <span>Call Now: 762-709-3032</span>
             </Button>
             
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-white text-white hover:bg-white/10 flex items-center gap-2 text-lg py-6"
-            >
-              <CalendarCheck size={20} />
-              <span>Join a Support Group</span>
-            </Button>
+            <Link to="/programs">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-white text-white hover:bg-white/10 flex items-center gap-2 text-lg py-6"
+              >
+                <CalendarCheck size={20} />
+                <span>Join a Support Group</span>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

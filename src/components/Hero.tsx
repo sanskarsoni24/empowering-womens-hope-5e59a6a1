@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import BilingualText from "./BilingualText";
 import { Mail, Phone, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const handleGetSupport = () => {
@@ -43,13 +44,15 @@ const Hero = () => {
                 <span>Get Support</span>
               </Button>
               
-              <Button 
-                variant="outline"
-                className="border-purple-dark text-purple-dark hover:bg-purple-light/10 px-8 py-6 text-lg flex items-center gap-2"
-              >
-                <Heart size={20} className="shrink-0" />
-                <span>Learn More</span>
-              </Button>
+              <Link to="/about">
+                <Button 
+                  variant="outline"
+                  className="border-purple-dark text-purple-dark hover:bg-purple-light/10 px-8 py-6 text-lg flex items-center gap-2"
+                >
+                  <Heart size={20} className="shrink-0" />
+                  <span>Learn More</span>
+                </Button>
+              </Link>
             </div>
             
             <div className="mt-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
@@ -68,7 +71,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-pink-light/80 to-purple-light/80 rounded-lg transform rotate-3"></div>
               <img 
-                src="/placeholder.svg" 
+                src="/lovable-uploads/cf6b32c2-082f-4724-a100-e711a2dde372.png" 
                 alt="Cancer Care For Her" 
                 className="w-full h-auto rounded-lg shadow-lg relative z-10 transform -rotate-3"
               />

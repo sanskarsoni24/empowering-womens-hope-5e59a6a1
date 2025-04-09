@@ -43,8 +43,8 @@ const Programs = () => {
                 </h3>
                 
                 <p className="text-gray-700 mb-4">
-                  Email us at <span className="font-medium">support@cancercareforher.org</span> or 
-                  call <span className="font-medium">+91 123 456 7890</span> to join any of our programs.
+                  Email us at <span className="font-medium">sanskarsoni.iitd@gmail.com</span> or 
+                  call <span className="font-medium">7627093032</span> to join any of our programs.
                 </p>
                 
                 <p className="text-gray-700">

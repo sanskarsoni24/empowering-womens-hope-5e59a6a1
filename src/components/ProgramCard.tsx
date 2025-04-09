@@ -1,7 +1,6 @@
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import BilingualText from "./BilingualText";
-import { motion } from "framer-motion";
 
 interface ProgramCardProps {
   title: string;
@@ -47,14 +46,9 @@ const ProgramCard = ({
       </CardHeader>
       
       <CardContent>
-        <div className="relative overflow-hidden">
-          <div className="transition-transform duration-500 transform group-hover:-translate-y-full">
-            <p className="text-gray-700 text-center mb-2">{description}</p>
-          </div>
-          
-          <div className="absolute top-0 left-0 w-full transition-transform duration-500 transform translate-y-full group-hover:translate-y-0">
-            <p className="text-gray-700 text-center hindi-text text-sm">{descriptionHindi}</p>
-          </div>
+        <div className="relative min-h-[180px]">
+          <p className="text-gray-700 text-center mb-4">{description}</p>
+          <p className="text-gray-700 text-center hindi-text text-sm mt-2">{descriptionHindi}</p>
         </div>
       </CardContent>
     </Card>
