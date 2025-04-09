@@ -21,12 +21,26 @@ const BilingualText = ({
 
   return (
     <div className={cn("flex flex-col gap-1", className)}>
-      <div className={cn(isHindi ? "text-sm opacity-75" : "", englishClassName)}>
-        {english}
-      </div>
-      <div className={cn("hindi-text", isHindi ? "font-bold text-lg" : "", hindiClassName)}>
-        {hindi}
-      </div>
+      {/* If Hindi is the detected language, show Hindi more prominently and English secondary */}
+      {isHindi ? (
+        <>
+          <div className={cn("font-bold text-lg", hindiClassName)}>
+            {hindi}
+          </div>
+          <div className={cn("text-sm opacity-75", englishClassName)}>
+            {english}
+          </div>
+        </>
+      ) : (
+        <>
+          <div className={cn("", englishClassName)}>
+            {english}
+          </div>
+          <div className={cn("hindi-text text-sm opacity-75", hindiClassName)}>
+            {hindi}
+          </div>
+        </>
+      )}
     </div>
   );
 };

@@ -71,8 +71,8 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-pink-light/80 to-purple-light/80 rounded-lg transform rotate-3"></div>
               <img 
-                src="/lovable-uploads/cf6b32c2-082f-4724-a100-e711a2dde372.png" 
-                alt="Cancer Care For Her" 
+                src="/lovable-uploads/a2ae3918-4b68-439d-b7a9-bdf570872f5c.png" 
+                alt="Supporting Women" 
                 className="w-full h-auto rounded-lg shadow-lg relative z-10 transform -rotate-3"
               />
             </div>
