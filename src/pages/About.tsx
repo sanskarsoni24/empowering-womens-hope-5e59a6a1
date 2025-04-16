@@ -53,7 +53,7 @@ const About = () => {
                 nameHindi="संस्कार सोनी"
                 role="Co-Founder"
                 linkedIn="https://www.linkedin.com/in/sanskar-soni-9b75671bb/"
-                imageSrc="/lovable-uploads/a9f0e13c-53c0-4e45-b84e-3e8d04c36ee1.png"
+                imageSrc="/lovable-uploads/a9f0e13c-530-4e45-b84e-3e8d04c36ee1.png"
               />
               
               <TeamMember
